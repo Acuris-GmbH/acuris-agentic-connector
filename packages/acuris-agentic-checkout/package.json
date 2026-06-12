@@ -1,7 +1,7 @@
 {
   "name": "@acuris-geo/agentic-checkout",
   "version": "0.1.0",
-  "description": "Agentic-checkout-ready address validation — converts Acuris /validate results into UCP (Universal Commerce Protocol) messages and ACP (Agentic Commerce Protocol) message errors inside merchant checkout-session endpoints.",
+  "description": "Agentic-checkout-ready address validation \u2014 converts Acuris /validate results into UCP (Universal Commerce Protocol) messages and ACP (Agentic Commerce Protocol) message errors inside merchant checkout-session endpoints.",
   "keywords": [
     "acuris",
     "ucp",
@@ -53,7 +53,7 @@
     "access": "public"
   },
   "dependencies": {
-    "@acuris-geo/av-sdk": "^0.2.0"
+    "@acuris-geo/av-sdk": "^0.3.0"
   },
   "devDependencies": {
     "@types/node": "^20.14.10",
