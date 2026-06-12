@@ -1,0 +1,64 @@
+{
+  "name": "@acuris-geo/agentic-checkout",
+  "version": "0.1.0",
+  "description": "Agentic-checkout-ready address validation — converts Acuris /validate results into UCP (Universal Commerce Protocol) messages and ACP (Agentic Commerce Protocol) message errors inside merchant checkout-session endpoints.",
+  "keywords": [
+    "acuris",
+    "ucp",
+    "universal-commerce-protocol",
+    "acp",
+    "agentic-commerce-protocol",
+    "agentic-commerce",
+    "address-validation",
+    "checkout",
+    "ai-agents"
+  ],
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json && node ./build-cjs.mjs",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "vitest run --coverage",
+    "test:watch": "vitest"
+  },
+  "engines": {
+    "node": ">=18.17.0"
+  },
+  "license": "MIT",
+  "author": "Acuris GmbH <engineering@acuris-geo.com>",
+  "homepage": "https://github.com/Acuris-GmbH/acuris-agentic-connector/tree/main/packages/acuris-agentic-checkout#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Acuris-GmbH/acuris-agentic-connector.git",
+    "directory": "packages/acuris-agentic-checkout"
+  },
+  "bugs": {
+    "url": "https://github.com/Acuris-GmbH/acuris-agentic-connector/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "@acuris-geo/av-sdk": "^0.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.10",
+    "@vitest/coverage-v8": "^2.1.4",
+    "typescript": "^5.5.4",
+    "vitest": "^2.1.4"
+  }
+}
